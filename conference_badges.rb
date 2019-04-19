@@ -13,7 +13,7 @@ end
 def assign_rooms(list_of_speakers)
   room_number = 1
   list_of_speakers.collect do |name|
-    "Hello, #{name}! You'll be assigned to room #{room_number}"
-    rooms_number += 1
+    "Hello, #{name}! You'll be assigned to room #{room_number}!"
+    room_number += 1
   end
 end
