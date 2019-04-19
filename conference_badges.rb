@@ -22,6 +22,10 @@ end
 
 def printer
   puts batch_badge_creator(list_of_speakers)
-  puts assign_rooms(list_of_speakers)
+  array_of_room_assignments = assign_rooms(list_of_speakers)
+  array_of_room_assignments.each do |room_assignment|
+    puts room_assignment
+  end
+end
 end
   
