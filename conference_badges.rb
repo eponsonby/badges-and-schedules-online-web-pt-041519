@@ -21,7 +21,10 @@ def assign_rooms(list_of_speakers)
 end
 
 def printer(list_of_speakers)
-  puts batch_badge_creator(list_of_speakers)
+  array_of_welcome_messages = batch_badge_creator(list_of_speakers)
+  array_of_welcome_messages.each do |message|
+    puts message
+  end
   array_of_room_assignments = assign_rooms(list_of_speakers)
   array_of_room_assignments.each do |room_assignment|
     puts room_assignment
