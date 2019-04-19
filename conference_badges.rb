@@ -27,5 +27,4 @@ def printer
     puts room_assignment
   end
 end
-end
   
